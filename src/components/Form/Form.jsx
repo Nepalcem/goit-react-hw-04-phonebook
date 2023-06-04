@@ -9,9 +9,9 @@ const Form = props => {
 
   const handleChange = e => {
     if (e.currentTarget.name === 'name') {
-      setName(e.currentTarget.value);
+      setName(e.currentTarget.value.trim());
     } else {
-      setNumber(e.currentTarget.value);
+      setNumber(e.currentTarget.value.trim());
     }
   };
 
